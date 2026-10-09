@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sarah Andrade | Desenvolvedora em formação</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.17.0/devicon.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bacasime+Antique&family=Sometype+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <script src="traducoes.js" defer></script>
+    <script src="script.js" defer></script>
+</head>
+<body class="abertura-ativa">
+
+    <div class="abertura" id="abertura" aria-hidden="true">
+        <div class="livro">
+            <div class="contracapa"></div>
+            <div class="pagina pagina-fixa"></div>
+            <div class="pagina" style="--ordem: 8"></div>
+            <div class="pagina" style="--ordem: 7"></div>
+            <div class="pagina" style="--ordem: 6"></div>
+            <div class="pagina" style="--ordem: 5"></div>
+            <div class="pagina" style="--ordem: 4"></div>
+            <div class="pagina" style="--ordem: 3"></div>
+            <div class="pagina" style="--ordem: 2"></div>
+            <div class="pagina" style="--ordem: 1"></div>
+            <div class="capa">
+                <span class="capa-titulo">SA</span>
+            </div>
+        </div>
+        <div class="brilho"></div>
+        <div class="luz"></div>
+    </div>
+
+    <div class="fundo" aria-hidden="true"></div>
+
+    <header class="menu">
+        <a class="logo" href="#inicio"><img src="img/logosa.png" alt="Sarah Andrade"></a>
+
+        <!-- Botão "hambúrguer": só aparece no celular e no tablet -->
+        <button class="menu-botao" id="menu-botao" type="button"
+                aria-expanded="false" aria-controls="menu-conteudo" aria-label="Abrir menu">
+            <span class="menu-botao-linhas" aria-hidden="true"></span>
+        </button>
+
+        <div class="menu-conteudo" id="menu-conteudo">
+        <nav>
+            <ul class="menu-lista">
+                <li><a class="menu-link ativo" href="#inicio"><img src="img/house-regular-full.svg" alt=""><span data-i18n="menu.inicio">Início</span></a></li>
+                <li><a class="menu-link" href="#sobremim"><img src="img/user-regular-full.svg" alt=""><span data-i18n="menu.sobre">Sobre Mim</span></a></li>
+                <li><a class="menu-link" href="#habilidades"><img src="img/code-solid-full.svg" alt=""><span data-i18n="menu.habilidades">Habilidades</span></a></li>
+                <li><a class="menu-link" href="#projetos"><img src="img/folder-regular-full.svg" alt=""><span data-i18n="menu.projetos">Projetos</span></a></li>
+                <li><a class="menu-link" href="#interesses"><img src="img/star-regular-full.svg" alt=""><span data-i18n="menu.interesses">Interesses</span></a></li>
+                <li><a class="menu-link" href="#contato"><img src="img/envelope-regular-full.svg" alt=""><span data-i18n="menu.contato">Contato</span></a></li>
+            </ul>
+        </nav>
+        <div class="menu-extras">
+            <button class="botao-icone" id="botao-tema" type="button" aria-label="Ativar modo claro">
+                <img class="icone-lua" src="img/moon-regular-full.svg" alt="">
+                <img class="icone-sol" src="img/sun-regular-full.svg" alt="">
+            </button>
+
+            <div class="idiomas">
+                <button class="botao-icone" id="botao-idioma" type="button"
+                        aria-haspopup="true" aria-expanded="false" aria-controls="lista-idiomas"
+                        aria-label="Mudar idioma" data-i18n-label="menu.idioma">
+                    <img src="img/globe-solid-full.svg" alt="">
+                </button>
+                <ul class="idiomas-lista" id="lista-idiomas" hidden>
+                    <li><button type="button" data-idioma="pt" lang="pt-BR">Português</button></li>
+                    <li><button type="button" data-idioma="en" lang="en">English</button></li>
+                    <li><button type="button" data-idioma="fr" lang="fr">Français</button></li>
+                    <li><button type="button" data-idioma="es" lang="es">Español</button></li>
+                </ul>
+            </div>
+        </div>
+        </div>
+    </header>
+
+    <a class="curriculo" href="curriculo.pdf" download><span data-i18n="curriculo">Currículo</span><img src="img/floppy-disk-regular-full.svg" alt=""></a>
+
+    <main>
+        <section class="inicio" id="inicio">
+            <div class="foto">
+                <img src="img/foto.JPG" alt="Foto de Sarah Andrade">
+            </div>
+            <div class="apresentacao">
+                <h1 class="nome">
+                    <span>Sarah</span>
+                    <span>Andrade</span>
+                </h1>
+                <p class="cargo" data-i18n="inicio.cargo">Desenvolvedora em formação</p>
+                <p class="texto" data-i18n="inicio.texto">
+                    Apaixonada por tecnologia, livros e criatividade. Gosto de transformar ideias
+                    em projetos e usar a programação para encontrar soluções, aprender coisas novas
+                    e dar vida ao que imagino.
+                </p>
+                <a class="botao" href="#projetos">
+                    <span data-i18n="inicio.botao">Ver projetos</span> <img src="img/arrow1.svg" alt="">
+                </a>
+            </div>
+
+            <a class="descer" href="#sobremim">
+                <span data-i18n="inicio.descer">Sobre Mim</span> <img src="img/arrow1.svg" alt="">
+            </a>
+        </section>
+
+        <section class="sobre" id="sobremim">
+            <div class="sobre-texto">
+                <p class="etiqueta" data-i18n="sobre.etiqueta">Sobre mim</p>
+                <h2 class="titulo">
+                    <span data-i18n="sobre.titulo1">Mais do que um código,</span>
+                    <span data-i18n="sobre.titulo2">sou eu.</span>
+                </h2>
+                <p class="texto" data-i18n="sobre.texto">
+                    Gosto de transformar ideias em coisas que podem ser vistas, usadas e
+                    compartilhadas. Foi na programação que encontrei uma maneira de unir
+                    minha curiosidade pela tecnologia com meu lado criativo. Além de programar
+                    e ser uma grande fã de Rock and Roll, gosto de livros, escrita e desenho,
+                    interesses que também fazem parte da forma como penso e crio. Estou construindo
+                    meu caminho como desenvolvedora e, a cada projeto, busco aprender algo novo,
+                    experimentar ideias diferentes e transformar problemas em soluções através do
+                    código.
+                </p>
+                <a class="botao" href="#habilidades">
+                    <span data-i18n="sobre.botao">Saiba mais</span> <img src="img/arrow1.svg" alt="">
+                </a>
+            </div>
+
+            <div class="sobre-fotos">
+                <figure class="quadro"><img src="img/livrosa.png" alt=""></figure>
+                <figure class="quadro"><img src="img/eu.JPG" alt=""></figure>
+            </div>
+        </section>
+
+        <section class="habilidades" id="habilidades">
+            <div class="habilidades-topo">
+                <div>
+                    <p class="etiqueta" data-i18n="hab.etiqueta">Habilidades</p>
+                    <h2 class="titulo titulo-invertido">
+                        <span data-i18n="hab.titulo1">Tecnologia é meu</span>
+                        <span data-i18n="hab.titulo2">idioma.</span>
+                    </h2>
+                    <p class="texto" data-i18n="hab.texto">
+                        Apresentando interesse por tecnologia desde criança, agora estudo e pratico
+                        diversas tecnologias, e estou sempre buscando aprender mais. Aqui estão
+                        algumas das minhas principais habilidades:
+                    </p>
+                    <a class="botao" href="#projetos">
+                        <span data-i18n="hab.botao">Ver projetos</span> <img src="img/arrow1.svg" alt="">
+                    </a>
+                </div>
+
+                <figure class="quadro quadro-grande">
+                    <img src="img/sarinhamac.png" alt="">
+                </figure>
+            </div>
+
+            <hr class="divisoria">
+
+            <ul class="habilidades-lista">
+                <li class="habilidade" style="--nivel: 90%">
+                    <i class="devicon-html5-plain habilidade-icone" aria-hidden="true"></i>
+                    <h3 class="habilidade-nome">HTML</h3>
+                    <div class="barra" aria-hidden="true"></div>
+                    <p class="habilidade-nivel">90%</p>
+                </li>
+                <li class="habilidade" style="--nivel: 85%">
+                    <i class="devicon-css3-plain habilidade-icone" aria-hidden="true"></i>
+                    <h3 class="habilidade-nome">CSS</h3>
+                    <div class="barra" aria-hidden="true"></div>
+                    <p class="habilidade-nivel">85%</p>
+                </li>
+                <li class="habilidade" style="--nivel: 30%">
+                    <i class="devicon-javascript-plain habilidade-icone" aria-hidden="true"></i>
+                    <h3 class="habilidade-nome">JavaScript</h3>
+                    <div class="barra" aria-hidden="true"></div>
+                    <p class="habilidade-nivel">30%</p>
+                </li>
+                <li class="habilidade" style="--nivel: 90%">
+                    <i class="devicon-python-plain habilidade-icone" aria-hidden="true"></i>
+                    <h3 class="habilidade-nome">Python</h3>
+                    <div class="barra" aria-hidden="true"></div>
+                    <p class="habilidade-nivel">90%</p>
+                </li>
+                <li class="habilidade" style="--nivel: 55%">
+                    <div class="habilidade-icones">
+                        <i class="devicon-git-plain habilidade-icone" aria-hidden="true"></i>
+                        <i class="devicon-github-original habilidade-icone" aria-hidden="true"></i>
+                    </div>
+                    <h3 class="habilidade-nome" data-i18n="hab.git">Git e GitHub</h3>
+                    <div class="barra" aria-hidden="true"></div>
+                    <p class="habilidade-nivel">55%</p>
+                </li>
+                <li class="habilidade" style="--nivel: 90%">
+                    <i class="devicon-vscode-plain habilidade-icone" aria-hidden="true"></i>
+                    <h3 class="habilidade-nome">VS Code</h3>
+                    <div class="barra" aria-hidden="true"></div>
+                    <p class="habilidade-nivel">90%</p>
+                </li>
+                <li class="habilidade" style="--nivel: 60%">
+                    <i class="devicon-linux-plain habilidade-icone" aria-hidden="true"></i>
+                    <h3 class="habilidade-nome">Linux</h3>
+                    <div class="barra" aria-hidden="true"></div>
+                    <p class="habilidade-nivel">60%</p>
+                </li>
+                <li class="habilidade" style="--nivel: 50%">
+                    <i class="devicon-mysql-original habilidade-icone" aria-hidden="true"></i>
+                    <h3 class="habilidade-nome">MySQL</h3>
+                    <div class="barra" aria-hidden="true"></div>
+                    <p class="habilidade-nivel">50%</p>
+                </li>
+            </ul>
+        </section>
+
+        <section class="projetos" id="projetos">
+            <div class="projetos-topo">
+                <div>
+                    <p class="etiqueta" data-i18n="proj.etiqueta">Projetos</p>
+                    <h2 class="titulo titulo-invertido">
+                        <span data-i18n="proj.titulo1">Conheça</span>
+                        <span data-i18n="proj.titulo2">meus projetos:</span>
+                    </h2>
+                    <p class="texto" data-i18n="proj.texto">
+                        Aqui estão alguns de meus projetos e ideias que já coloquei em prática.
+                        Ainda em desenvolvimento, mas com o objetivo de treinar minhas habilidades e
+                        unir meus interesses com os códigos.
+                    </p>
+                    <a class="botao" href="https://github.com/feynman-sarah" target="_blank" rel="noopener">
+                        <span data-i18n="proj.botao">Saiba mais</span> <img src="img/arrow1.svg" alt="">
+                    </a>
+                </div>
+
+                <div class="ferramentas">
+                    <h3 class="ferramentas-titulo" data-i18n="proj.ferramentas">Ferramentas mais utilizadas</h3>
+                    <ul class="ferramentas-lista">
+                        <li><i class="devicon-html5-plain habilidade-icone" aria-hidden="true"></i><span class="sr">HTML</span></li>
+                        <li><i class="devicon-css3-plain habilidade-icone" aria-hidden="true"></i><span class="sr">CSS</span></li>
+                        <li><i class="devicon-javascript-plain habilidade-icone" aria-hidden="true"></i><span class="sr">JavaScript</span></li>
+                        <li class="habilidade-icones">
+                            <i class="devicon-git-plain habilidade-icone" aria-hidden="true"></i>
+                            <i class="devicon-github-original habilidade-icone" aria-hidden="true"></i>
+                            <span class="sr" data-i18n="hab.git">Git e GitHub</span>
+                        </li>
+                        <li><i class="devicon-vscode-plain habilidade-icone" aria-hidden="true"></i><span class="sr">VS Code</span></li>
+                    </ul>
+                </div>
+            </div>
+
+            <ul class="projetos-lista">
+                <li>
+                    <a class="projeto" href="https://feynman-sarah.github.io/feynmanbookstore/" target="_blank" rel="noopener">
+                        <img class="projeto-imagem" src="img/capafeynmanbookstore.png" alt="">
+                        <div class="projeto-info">
+                            <h3 class="projeto-nome">Feynman Bookstore</h3>
+                            <p class="projeto-descricao" data-i18n="proj.p1desc">O projeto foi criado durante a aula de
+                                FrontEnd, com o objetivo de criar um e-commerce do zero e desenvolver
+                                não somente a ideia, como um modelo no Figma e então, desenvolver
+                                o código a partir desse modelo.
+                            </p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a class="projeto" href="https://endereco-do-site-2.com" target="_blank" rel="noopener">
+                        <img class="projeto-imagem" src="img/projeto-2.png" alt="">
+                        <div class="projeto-info">
+                            <h3 class="projeto-nome">Seto Kaiba</h3>
+                            <p class="projeto-descricao" data-i18n="proj.p2desc">O site foi pensado e desenvolvido por mim,
+                                tenho muito interesse pelo personagem e decidi unir meus dois
+                                interesses em um único projeto.
+                            </p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a class="projeto" href="https://endereco-do-site-3.com" target="_blank" rel="noopener">
+                        <img class="projeto-imagem" src="img/projeto-3.png" alt="">
+                        <div class="projeto-info">
+                            <h3 class="projeto-nome" data-i18n="proj.p3nome">Em desenvolvimento</h3>
+                            <p class="projeto-descricao" data-i18n="proj.p3desc">Projeto ainda em desenvolvimento.</p>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </section>
+
+        <section class="interesses" id="interesses">
+            <p class="etiqueta" data-i18n="int.etiqueta">Interesses</p>
+            <h2 class="titulo titulo-invertido">
+                <span data-i18n="int.titulo1">Coisas que me tornam</span>
+                <span data-i18n="int.titulo2">eu mesma.</span>
+            </h2>
+
+            <ul class="interesses-lista">
+                <li class="interesse"><img src="img/book-open-regular-full.svg" alt=""><span data-i18n="int.livros">Livros</span></li>
+                <li class="interesse"><img src="img/palette-solid-full.svg" alt=""><span data-i18n="int.desenho">Desenho</span></li>
+                <li class="interesse"><img src="img/code-solid-full.svg" alt=""><span data-i18n="int.programacao">Programação</span></li>
+                <li class="interesse"><img src="img/music-solid-full.svg" alt=""><span data-i18n="int.musica">Música</span></li>
+                <li class="interesse"><img src="img/star-regular-full.svg" alt=""><span data-i18n="int.starwars">Star Wars</span></li>
+                <li class="interesse"><img src="img/volleyball-solid-full.svg" alt=""><span data-i18n="int.volei">Vôlei</span></li>
+                <li class="interesse"><img src="img/plane-solid-full.svg" alt=""><span data-i18n="int.viagens">Viagens</span></li>
+                <li class="interesse"><img src="img/clapperboard-solid-full.svg" alt=""><span data-i18n="int.filmes">Filmes</span></li>
+            </ul>
+
+            <div class="interesses-textos">
+                <div class="citacao" tabindex="0">
+                    <p class="citacao-titulo" data-i18n="int.cit1titulo">O que me define</p>
+                    <p class="citacao-texto" data-i18n="int.cit1texto">
+                        Cada pequeno detalhe e gosto que tenho é aquilo que me torna eu mesma,
+                        é o que me faz combinar minha criatividade e habilidade com algo produtivo,
+                        algo que pode ser útil para outras pessoas.
+                    </p>
+                </div>
+                <div class="citacao" tabindex="0">
+                    <p class="citacao-titulo" data-i18n="int.cit2titulo">Por que misturo universos</p>
+                    <p class="citacao-texto" data-i18n="int.cit2texto">
+                        Acho sempre interessante misturar coisas que gosto em meus projetos.
+                        A Feynman Bookstore surgiu do meu amor por livros e meu interesse pessoal
+                        no físico Richard Feynman. Misturar esses universos me motiva a dar o meu
+                        melhor em cada desenvolvimento de código.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="contato" id="contato">
+            <div class="contato-grade">
+                <div>
+                    <p class="etiqueta" data-i18n="cont.etiqueta">Contato</p>
+                    <h2 class="titulo titulo-invertido">
+                        <span data-i18n="cont.titulo1">Vamos</span>
+                        <span data-i18n="cont.titulo2">conversar?</span>
+                    </h2>
+                    <p class="texto" data-i18n="cont.texto">
+                        Caso esteja interessado, entre em contato, estou sempre disponível
+                        para bate-papos sobre tecnologia e aberta a novas oportunidades
+                        e projetos colaborativos.
+                    </p>
+
+                    <ul class="contatos">
+                        <li>
+                            <a class="contato-link" href="https://github.com/feynman-sarah" target="_blank" rel="noopener">
+                                <i class="devicon-github-original contato-icone" aria-hidden="true"></i>GitHub
+                            </a>
+                        </li>
+                        <li>
+                            <a class="contato-link" href="https://www.linkedin.com/in/seu-perfil" target="_blank" rel="noopener">
+                                <img src="img/linkedin.svg" alt="">LinkedIn
+                            </a>
+                        </li>
+                        <li>
+                            <a class="contato-link" href="https://www.instagram.com/eandradesarah/" target="_blank" rel="noopener">
+                                <img src="img/instagram.svg" alt="">Instagram
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <form class="formulario" id="formulario" action="https://formspree.io/f/xrpbarwr" method="POST" novalidate>
+                    <div class="campo">
+                        <label for="nome" data-i18n="cont.nome">Nome</label>
+                        <input id="nome" name="nome" type="text" autocomplete="name" required>
+                        <p class="erro" id="erro-nome" aria-live="polite"></p>
+                    </div>
+                    <div class="campo">
+                        <label for="email" data-i18n="cont.email">E-mail</label>
+                        <input id="email" name="email" type="email" autocomplete="email" required>
+                        <p class="erro" id="erro-email" aria-live="polite"></p>
+                    </div>
+                    <div class="campo">
+                        <label for="mensagem" data-i18n="cont.mensagem">Mensagem</label>
+                        <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+                        <p class="erro" id="erro-mensagem" aria-live="polite"></p>
+                    </div>
+                    <button class="botao" type="submit">
+                        <span data-i18n="cont.enviar">Enviar mensagem</span> <img src="img/arrow1.svg" alt="">
+                    </button>
+                    <p class="aviso" id="aviso" aria-live="polite"></p>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="rodape">
+        <img class="rodape-logo" src="img/logosa.png" alt="">
+        <p class="rodape-texto">
+            © <span id="ano">2026</span> Sarah. <span data-i18n="rodape.direitos">Todos os direitos reservados.</span>
+        </p>
+    </footer>
+</body>
+</html>
